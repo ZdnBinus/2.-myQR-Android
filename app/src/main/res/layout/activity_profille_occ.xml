@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfilleOccActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/baseline_account_circle_black_24dp"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textStyle="bold"
+            android:id="@+id/namePO"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginTop="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="desc (user/dokter)"
+            android:id="@+id/descPO"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/namePO"
+            android:layout_marginTop="5dp"
+
+            ></TextView>
+
+        <Button
+            android:id="@+id/sosmed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_marginLeft="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/sosmed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_toRightOf="@+id/sosmed1"
+            ></Button>
+
+        <Button
+            android:id="@+id/sosmed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:layout_toRightOf="@+id/sosmed2"
+            ></Button>
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thumbnail"
+            android:layout_toRightOf="@+id/sosmed3"
+            android:background="@drawable/ic_settings"
+            ></Button>
+
+        <CalendarView
+            android:layout_below="@+id/sosmed1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            ></CalendarView>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
