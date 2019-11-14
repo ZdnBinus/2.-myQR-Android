@@ -27,6 +27,7 @@ public class    HomeActivity extends AppCompatActivity {
     private ProfilleFragment profilleFragment;
     private BookFragment bookFragment;
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
