@@ -13,6 +13,7 @@ import com.example.zaidance.myqr.R;
 public class MainActivity extends AppCompatActivity {
     Button btnLogin, btnRegis;
     EditText etUsername, etPassword;
+    EditText mas;
 
 
     @Override
